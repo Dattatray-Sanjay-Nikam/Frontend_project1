@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Farm Security Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌾 Smart Farm Security System</h1>
+  </header>
+
+  <main>
+    <!-- Status Section -->
+    <section class="status">
+      <h2>System Status</h2>
+      <p id="status-indicator" class="monitoring">Monitoring...</p>
+    </section>
+
+    <!-- Controls Section -->
+    <section class="controls">
+      <h2>Controls</h2>
+      <button class="btn" onclick="activateSprinklers()">💧 Activate Sprinklers</button>
+      <button class="btn" onclick="turnOnLights()">💡 Turn on Lights</button>
+      <button class="btn" onclick="triggerAlarm()">🚨 Trigger Alarm</button>
+    </section>
+
+    <!-- Detection Log -->
+    <section class="log">
+      <h2>Detection Log</h2>
+      <ul id="log-list">
+        <li>[12:00] System started. Monitoring farm...</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Smart Farm Security Project</p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>

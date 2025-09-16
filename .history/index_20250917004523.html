@@ -1,0 +1,57 @@
+<!doctype html>
+<div class="card live-panel">
+<div style="display:flex;align-items:center;justify-content:space-between">
+<h2>Live Feed</h2>
+<div style="display:flex;gap:8px;align-items:center">
+<div class="badge">Camera: Cam-01</div>
+<div class="badge">FPS: <span id="fps">24</span></div>
+</div>
+</div>
+
+
+<div class="video-wrap card" style="padding:0;">
+<div class="video-placeholder" id="video">
+<div style="text-align:center">
+<div style="font-weight:700;font-size:16px;margin-bottom:6px">Virtual Camera - Demo</div>
+<div class="muted">(In real system this would show live stream & detection)</div>
+</div>
+</div>
+</div>
+
+
+<div class="stats" style="margin-top:10px">
+<div class="stat"><small class="muted">Animals Today</small><b id="count-animals">0</b></div>
+<div class="stat"><small class="muted">Detections</small><b id="count-detections">0</b></div>
+<div class="stat"><small class="muted">Alerts</small><b id="count-alerts">0</b></div>
+</div>
+
+
+<div style="margin-top:10px">
+<h2>Detection Log</h2>
+<div class="log" id="detection-log"></div>
+</div>
+</div>
+</section>
+
+
+<!-- RIGHT -->
+<aside class="right">
+<div class="card section">
+<h2>Controls</h2>
+<div class="controls-grid">
+<div class="control-card">
+<h3>Sprinklers</h3>
+<div class="switch" id="sprink-switch"><div class="knob"></div></div>
+</div>
+
+
+<div class="control-card">
+<h3>Lights</h3>
+<div class="switch on" id="light-switch"><div class="knob"></div></div>
+</div>
+</div>
+</div>
+</aside>
+</main>
+</body>
+</html>
